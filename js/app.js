@@ -30,7 +30,7 @@ async function init() {
  */
 async function loadRecipes() {
     try {
-        const response = await fetch('./src/data/recipes.json');
+        const response = await fetch('./data/recipes.json');
         allRecipes = await response.json();
         filteredRecipes = [...allRecipes];
         initializeTags();

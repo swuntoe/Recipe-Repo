@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "name": "番茄義大利麵",
+    "description": "經典的義大利家庭料理",
+    "servings": 2,
+    "prepTime": 10,
+    "cookTime": 20,
+    "ingredients": [
+      {
+        "name": "義大利麵",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "番茄",
+        "amount": 3,
+        "unit": "個"
+      },
+      {
+        "name": "大蒜",
+        "amount": 2,
+        "unit": "瓣"
+      },
+      {
+        "name": "橄欖油",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "name": "鹽",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "黑胡椒",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "在沸水中加鹽，放入義大利麵煮至al dente",
+      "同時，切碎大蒜並炒香",
+      "加入番茄丁，燜煮10分鐘",
+      "瀝乾麵條，加入醬汁混合",
+      "上盤，淋上橄欖油即可"
+    ],
+    "tags": ["義大利", "素食", "快手菜"]
+  },
+  {
+    "id": 2,
+    "name": "香滷蛋",
+    "description": "鹹香入味的滷蛋，配白飯絕佳",
+    "servings": 4,
+    "prepTime": 5,
+    "cookTime": 30,
+    "ingredients": [
+      {
+        "name": "雞蛋",
+        "amount": 8,
+        "unit": "個"
+      },
+      {
+        "name": "醬油",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "水",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "冰糖",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "八角",
+        "amount": 2,
+        "unit": "個"
+      },
+      {
+        "name": "生薑",
+        "amount": 3,
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "雞蛋煮硬後冷卻，剝殼",
+      "將醬油、水、冰糖、八角混合煮沸",
+      "加入生薑片增加香氣",
+      "放入雞蛋浸漬30分鐘以上",
+      "冷藏後即可享用"
+    ],
+    "tags": ["中式", "下飯菜", "素食"]
+  },
+  {
+    "id": 3,
+    "name": "蜂蜜檸檬茶",
+    "description": "清爽酸甜，提神解渴的飲品",
+    "servings": 2,
+    "prepTime": 5,
+    "cookTime": 5,
+    "ingredients": [
+      {
+        "name": "檸檬",
+        "amount": 1,
+        "unit": "個"
+      },
+      {
+        "name": "蜂蜜",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "熱水",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "冰塊",
+        "amount": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "檸檬切半，榨取檸檬汁",
+      "將蜂蜜放入杯中",
+      "倒入熱水混合攪勻",
+      "加入檸檬汁",
+      "放入冰塊即可享用"
+    ],
+    "tags": ["飲品", "素食", "快手菜"]
+  },
+  {
+    "id": 4,
+    "name": "蒜香奶油牛排",
+    "description": "餐廳級別的香嫩牛排",
+    "servings": 2,
+    "prepTime": 10,
+    "cookTime": 15,
+    "ingredients": [
+      {
+        "name": "牛排",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "奶油",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "大蒜",
+        "amount": 3,
+        "unit": "瓣"
+      },
+      {
+        "name": "檸檬",
+        "amount": 0.5,
+        "unit": "個"
+      },
+      {
+        "name": "黑胡椒",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "海鹽",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "牛排退冰至室溫，兩面撒鹽和黑胡椒",
+      "熱鍋，放入牛排煎至兩面金黃（每面3-4分鐘）",
+      "放入奶油和切碎的大蒜",
+      "用湯匙舀奶油反覆淋在牛排上，增加香味",
+      "檸檬汁在牛排上，即可盛盤"
+    ],
+    "tags": ["西餐", "肉類", "高級料理"]
+  },
+  {
+    "id": 5,
+    "name": "紅咖喱雞",
+    "description": "泰式風味，香辣濃郁",
+    "servings": 3,
+    "prepTime": 10,
+    "cookTime": 25,
+    "ingredients": [
+      {
+        "name": "雞肉",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "紅咖喱醬",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "椰奶",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "青檸",
+        "amount": 1,
+        "unit": "個"
+      },
+      {
+        "name": "魚露",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "香茅",
+        "amount": 1,
+        "unit": "根"
+      }
+    ],
+    "instructions": [
+      "雞肉切塊，炒至半熟",
+      "加入紅咖喱醬炒香",
+      "倒入椰奶，煮至沸騰",
+      "轉小火燜15分鐘至雞肉熟透",
+      "加入魚露和檸檬汁調味"
+    ],
+    "tags": ["泰式", "咖喱", "肉類"]
+  }
+]
