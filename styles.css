@@ -189,6 +189,27 @@ body {
     font-size: 0.8rem;
 }
 
+/* 參考來源 */
+.recipe-source {
+    margin: 15px 0;
+    padding: 12px 15px;
+    background-color: #f0f8ff;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.recipe-source a {
+    color: var(--primary-color);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.recipe-source a:hover {
+    text-decoration: underline;
+}
+
 .recipe-card-footer {
     padding: 15px 20px;
     background-color: var(--light-bg);

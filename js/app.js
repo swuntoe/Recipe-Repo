@@ -263,6 +263,15 @@ function showRecipeDetails(recipeName) {
         ? recipe.tags.map(tag => `<span class="recipe-tag">${tag}</span>`).join('')
         : '';
 
+    // 處理參考來源 - 檢查是否為 URL
+    let sourceHTML = '';
+    if (recipe.source) {
+        const isUrl = recipe.source.startsWith('http://') || recipe.source.startsWith('https://');
+        sourceHTML = isUrl 
+            ? `<div class="recipe-source"><strong>參考來源：</strong><a href="${recipe.source}" target="_blank" rel="noopener noreferrer">${recipe.source}</a></div>`
+            : `<div class="recipe-source"><strong>參考來源：</strong>${recipe.source}</div>`;
+    }
+
     modalBody.innerHTML = `
         <h2>${recipe.name}</h2>
         <p>${recipe.description}</p>
@@ -283,6 +292,8 @@ function showRecipeDetails(recipeName) {
         </div>
 
         <div class="recipe-tags">${tagsHTML}</div>
+
+        ${sourceHTML}
 
         <div class="ingredients-section">
             <h3>材料</h3>
