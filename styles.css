@@ -390,6 +390,7 @@ body {
 
 .instructions-list {
     counter-reset: step-counter;
+    list-style: none;
 }
 
 .instructions-list li {
