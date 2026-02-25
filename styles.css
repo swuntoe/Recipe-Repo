@@ -389,7 +389,7 @@ body {
 }
 
 .instructions-list {
-    list-style: none;
+    counter-reset: step-counter;
 }
 
 .instructions-list li {
@@ -416,8 +416,35 @@ body {
     font-weight: 600;
 }
 
-.instructions-list {
-    counter-reset: step-counter;
+/* 步驟分組 */
+.instructions-group {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.instructions-group:first-child {
+    margin-top: 0;
+}
+
+.instructions-group .group-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.instructions-group .instructions-list {
+    margin: 0;
+}
+
+.instructions-group .instructions-list li {
+    background-color: white;
+    margin-bottom: 8px;
 }
 
 /* Converter Form */

@@ -234,7 +234,30 @@ function showRecipeDetails(recipeName) {
         `).join('');
     }
 
-    const instructionsHTML = recipe.instructions.map(instr => `<li>${instr}</li>`).join('');
+    // 處理步驟 - 支持分組和非分組格式
+    let instructionsHTML = '';
+    const hasInstructionGroups = recipe.instructions && recipe.instructions.length > 0 && recipe.instructions[0].group;
+
+    if (hasInstructionGroups) {
+        // 分組步驟
+        instructionsHTML = recipe.instructions.map((group, groupIndex) => {
+            const stepsHTML = group.steps.map((step, stepIndex) => 
+                `<li>${step}</li>`
+            ).join('');
+            
+            return `
+                <div class="instructions-group">
+                    <h4 class="group-title">${group.group}</h4>
+                    <ol class="instructions-list" start="${groupIndex * 10 + 1}">
+                        ${stepsHTML}
+                    </ol>
+                </div>
+            `;
+        }).join('');
+    } else {
+        // 傳統單一列表步驟
+        instructionsHTML = `<ol class="instructions-list">${recipe.instructions.map(instr => `<li>${instr}</li>`).join('')}</ol>`;
+    }
 
     const tagsHTML = recipe.tags 
         ? recipe.tags.map(tag => `<span class="recipe-tag">${tag}</span>`).join('')
