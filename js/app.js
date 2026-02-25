@@ -248,7 +248,7 @@ function showRecipeDetails(recipeName) {
             return `
                 <div class="instructions-group">
                     <h4 class="group-title">${group.group}</h4>
-                    <ol class="instructions-list" start="${groupIndex * 10 + 1}">
+                    <ol class="instructions-list instructions-list-grouped">
                         ${stepsHTML}
                     </ol>
                 </div>
