@@ -1,0 +1,15 @@
+{
+  "name": "recipe-repo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A recipe web app with unit conversion functionality",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'No build needed for pure HTML/CSS/JS'",
+    "preview": "python -m http.server 3000"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "homepage": "https://swuntoe.github.io/Recipe-Repo"
+}

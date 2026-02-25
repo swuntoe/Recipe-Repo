@@ -1,14 +1,73 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Recipe-Repo/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>recipe-repo</title>
-    <script type="module" crossorigin src="/Recipe-Repo/assets/index-DKmRqpH6.js"></script>
-    <link rel="stylesheet" crossorigin href="/Recipe-Repo/assets/index-D2vK_fEG.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Repo - 食譜管理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🍳 食譜管理</h1>
+            <p class="subtitle">發現和烹飪美食食譜</p>
+        </header>
+
+        <main class="main-content">
+            <!-- 搜尋和篩選 -->
+            <div class="filter-section">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="搜尋食譜..."
+                >
+                <div class="filter-tags" id="filterTags"></div>
+            </div>
+
+            <!-- 食譜列表 -->
+            <div class="recipes-container" id="recipesContainer">
+                <p class="loading">載入中...</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- 食譜詳情 Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- 單位轉換 Modal -->
+    <div id="converterModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeConverter">&times;</button>
+            <h2>單位轉換計算機</h2>
+            <div class="converter-form">
+                <div class="form-group">
+                    <label for="converterValue">數值</label>
+                    <input type="number" id="converterValue" placeholder="輸入數值" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="fromUnit">從</label>
+                    <select id="fromUnit">
+                        <option value="">選擇單位</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="toUnit">至</label>
+                    <select id="toUnit">
+                        <option value="">選擇單位</option>
+                    </select>
+                </div>
+                <div class="converter-result" id="converterResult"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/unitConverter.js"></script>
+    <script src="js/app.js"></script>
+</body>
 </html>
