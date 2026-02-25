@@ -154,13 +154,13 @@ function renderRecipes() {
 
     // 為卡片添加點擊事件
     document.querySelectorAll('.recipe-card').forEach(card => {
-        card.addEventListener('click', () => showRecipeDetails(card.dataset.recipeId));
+        card.addEventListener('click', () => showRecipeDetails(card.dataset.recipeName));
     });
 
     document.querySelectorAll('.view-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
-            showRecipeDetails(btn.dataset.recipeId);
+            showRecipeDetails(btn.dataset.recipeName);
         });
     });
 }
@@ -174,7 +174,7 @@ function createRecipeCard(recipe) {
         : '';
 
     return `
-        <div class="recipe-card" data-recipe-id="${recipe.id}">
+        <div class="recipe-card" data-recipe-name="${recipe.name}">
             <div class="recipe-card-header">
                 <h2 class="recipe-card-title">${recipe.name}</h2>
                 <p class="recipe-card-description">${recipe.description}</p>
@@ -188,7 +188,7 @@ function createRecipeCard(recipe) {
                 <div class="recipe-tags">${tagsHTML}</div>
             </div>
             <div class="recipe-card-footer">
-                <button class="view-btn" data-recipe-id="${recipe.id}">查看詳情</button>
+                <button class="view-btn" data-recipe-name="${recipe.name}">查看詳情</button>
             </div>
         </div>
     `;
@@ -197,8 +197,8 @@ function createRecipeCard(recipe) {
 /**
  * 顯示食譜詳情
  */
-function showRecipeDetails(recipeId) {
-    const recipe = allRecipes.find(r => r.id == recipeId);
+function showRecipeDetails(recipeName) {
+    const recipe = allRecipes.find(r => r.name === recipeName);
     if (!recipe) return;
 
     const ingredientsHTML = recipe.ingredients.map(ing => `
