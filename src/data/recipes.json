@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "name": "番茄義大利麵",
+    "description": "經典的義大利家庭料理",
+    "servings": 2,
+    "prepTime": 10,
+    "cookTime": 20,
+    "ingredients": [
+      {
+        "name": "義大利麵",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "番茄",
+        "amount": 3,
+        "unit": "個"
+      },
+      {
+        "name": "大蒜",
+        "amount": 2,
+        "unit": "瓣"
+      },
+      {
+        "name": "橄欖油",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "name": "鹽",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "黑胡椒",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "在沸水中加鹽，放入義大利麵煮至al dente",
+      "同時，切碎大蒜並炒香",
+      "加入番茄丁，燜煮10分鐘",
+      "瀝乾麵條，加入醬汁混合",
+      "上盤，淋上橄欖油即可"
+    ],
+    "tags": ["義大利", "素食", "快手菜"]
+  },
+  {
+    "id": 2,
+    "name": "巧克力蛋糕",
+    "description": "濕潤香濃的巧克力蛋糕",
+    "servings": 8,
+    "prepTime": 15,
+    "cookTime": 35,
+    "ingredients": [
+      {
+        "name": "麵粉",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "可可粉",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "糖",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "雞蛋",
+        "amount": 2,
+        "unit": "個"
+      },
+      {
+        "name": "牛奶",
+        "amount": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "植物油",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "泡打粉",
+        "amount": 1.5,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "預熱烤箱至180°C",
+      "混合所有乾性材料",
+      "分開混合所有濕性材料",
+      "將濕性材料倒入乾性材料中混合",
+      "倒入烤盤，烤35分鐘",
+      "完全冷卻後脫模"
+    ],
+    "tags": ["甜點", "烘焙", "巧克力"]
+  },
+  {
+    "id": 3,
+    "name": "雞肉炒飯",
+    "description": "簡單快手的雞肉炒飯",
+    "servings": 2,
+    "prepTime": 10,
+    "cookTime": 10,
+    "ingredients": [
+      {
+        "name": "白飯",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "雞胸肉",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "雞蛋",
+        "amount": 1,
+        "unit": "個"
+      },
+      {
+        "name": "洋蔥",
+        "amount": 0.5,
+        "unit": "個"
+      },
+      {
+        "name": "豌豆和玉米",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "醬油",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "植物油",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "雞肉切丁，炒至半熟盛起",
+      "炒蛋盛起",
+      "炒洋蔥和菜，加入白飯翻炒",
+      "回入雞肉和雞蛋，加醬油調味",
+      "快速翻炒均勻即可"
+    ],
+    "tags": ["中式", "快手菜", "米飯"]
+  }
+]
