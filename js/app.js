@@ -201,13 +201,38 @@ function showRecipeDetails(recipeName) {
     const recipe = allRecipes.find(r => r.name === recipeName);
     if (!recipe) return;
 
-    const ingredientsHTML = recipe.ingredients.map(ing => `
-        <div class="ingredient-item">
-            <span class="ingredient-name">${ing.name}</span>
-            <span class="ingredient-amount">${ing.amount} ${ing.unit}</span>
-            <button class="converter-btn" data-value="${ing.amount}" data-unit="${ing.unit}">轉換</button>
-        </div>
-    `).join('');
+    // 處理材料 - 支持分組和非分組格式
+    let ingredientsHTML = '';
+    const hasGroups = recipe.ingredients.some(ing => ing.group);
+
+    if (hasGroups) {
+        // 分組材料
+        ingredientsHTML = recipe.ingredients.map(group => {
+            const itemsHTML = group.items.map(ing => `
+                <div class="ingredient-item">
+                    <span class="ingredient-name">${ing.name}</span>
+                    <span class="ingredient-amount">${ing.amount} ${ing.unit}</span>
+                    <button class="converter-btn" data-value="${ing.amount}" data-unit="${ing.unit}">轉換</button>
+                </div>
+            `).join('');
+            
+            return `
+                <div class="ingredients-group">
+                    <h4 class="group-title">${group.group}</h4>
+                    ${itemsHTML}
+                </div>
+            `;
+        }).join('');
+    } else {
+        // 傳統單一列表材料
+        ingredientsHTML = recipe.ingredients.map(ing => `
+            <div class="ingredient-item">
+                <span class="ingredient-name">${ing.name}</span>
+                <span class="ingredient-amount">${ing.amount} ${ing.unit}</span>
+                <button class="converter-btn" data-value="${ing.amount}" data-unit="${ing.unit}">轉換</button>
+            </div>
+        `).join('');
+    }
 
     const instructionsHTML = recipe.instructions.map(instr => `<li>${instr}</li>`).join('');
 
